@@ -67,7 +67,7 @@ const page = () => {
       <div className="px-6 max-w-[800px] shadow py-6 rounded-xl mt-16 h-fit">
         {!portfolio ? (
           <div className="flex flex-col gap-4 py-5">
-            <div className="text-lg text-xl font-medium pb-4">
+            <div className="text-lg sm:text-xl font-medium pb-4">
               <span className="font-semibold underline text-primary1">
                 No data found,
               </span>{" "}

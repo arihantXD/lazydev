@@ -1,7 +1,7 @@
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Link, linkSchema } from "@repo/schema";
+import { LinkEnum, linkSchema } from "@repo/schema";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 import {
@@ -76,14 +76,16 @@ const LinkForm = ({
                           <SelectValue placeholder="Social Link" />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value={Link.GitHub}>GitHub</SelectItem>
-                          <SelectItem value={Link.LinkedIn}>
+                          <SelectItem value={LinkEnum.GitHub}>
+                            GitHub
+                          </SelectItem>
+                          <SelectItem value={LinkEnum.LinkedIn}>
                             LinkedIn
                           </SelectItem>
-                          <SelectItem value={Link.Facebook}>
+                          <SelectItem value={LinkEnum.Facebook}>
                             Facebook
                           </SelectItem>
-                          <SelectItem value={Link.Instagram}>
+                          <SelectItem value={LinkEnum.Instagram}>
                             Instagram
                           </SelectItem>
                         </SelectContent>
