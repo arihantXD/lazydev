@@ -86,7 +86,7 @@ userRouter.post("/login", async (req, res) => {
           httpOnly: true,
           maxAge: 1000 * 60 * 60 * 24,
           secure: true,
-          sameSite: false,
+          sameSite: "none",
         });
         res
           .status(201)
