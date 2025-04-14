@@ -8,8 +8,8 @@
     "forceConsistentCasingInFileNames": true,
     "baseUrl": ".",
     "paths": {
-      "@repo/db/*": ["packages/prisma/src/*"],
-      "@repo/schema/*": ["packages/schema/src/*"]
+      "@repo/db": ["packages/prisma/src"],
+      "@repo/schema": ["packages/schema/src"]
     }
   }
 }
